@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/youvalpolacsek/Youval-Polacsek-15-11-2019/static/css/main.98822ef1.chunk.css",
+    "main.js": "/youvalpolacsek/Youval-Polacsek-15-11-2019/static/js/main.12a19db2.chunk.js",
+    "main.js.map": "/youvalpolacsek/Youval-Polacsek-15-11-2019/static/js/main.12a19db2.chunk.js.map",
+    "runtime-main.js": "/youvalpolacsek/Youval-Polacsek-15-11-2019/static/js/runtime-main.bdd7a125.js",
+    "runtime-main.js.map": "/youvalpolacsek/Youval-Polacsek-15-11-2019/static/js/runtime-main.bdd7a125.js.map",
+    "static/js/2.48d3e2e9.chunk.js": "/youvalpolacsek/Youval-Polacsek-15-11-2019/static/js/2.48d3e2e9.chunk.js",
+    "static/js/2.48d3e2e9.chunk.js.map": "/youvalpolacsek/Youval-Polacsek-15-11-2019/static/js/2.48d3e2e9.chunk.js.map",
+    "index.html": "/youvalpolacsek/Youval-Polacsek-15-11-2019/index.html",
+    "precache-manifest.28364a1454fff92f21eed4723041c28f.js": "/youvalpolacsek/Youval-Polacsek-15-11-2019/precache-manifest.28364a1454fff92f21eed4723041c28f.js",
+    "service-worker.js": "/youvalpolacsek/Youval-Polacsek-15-11-2019/service-worker.js",
+    "static/css/main.98822ef1.chunk.css.map": "/youvalpolacsek/Youval-Polacsek-15-11-2019/static/css/main.98822ef1.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bdd7a125.js",
+    "static/js/2.48d3e2e9.chunk.js",
+    "static/css/main.98822ef1.chunk.css",
+    "static/js/main.12a19db2.chunk.js"
+  ]
+}
