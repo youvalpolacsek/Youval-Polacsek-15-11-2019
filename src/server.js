@@ -3,11 +3,15 @@ const path = require('path')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 
-mongoose.connect('mongodb://127.0.0.1/HeroloWeather', {useUnifiedTopology: true, useNewUrlParser: true })
+
+// mongoose.connect('mongodb://127.0.0.1/HeroloWeather', {useUnifiedTopology: true, useNewUrlParser: true })
+
+mongoose.connect(process.env.MONGODB_URI||'mongodb://localhost/HeroloWeather');
 
 const app = express()
 const api = require('./api')
 
+app.use(express.static(path.join(__dirname, 'build')));
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
@@ -21,7 +25,11 @@ app.use(function (req, res, next) {
 
 app.use('/', api)
 
+app.get('*', function (req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+
 const port = 5000
-let socket = app.listen(port, () => console.log( `Running server on port ${ port }` ) )
+let socket = app.listen(process.env.port ||port, () => console.log( `Running server on port ${ port }` ) )
 
 module.exports = { app, socket }
