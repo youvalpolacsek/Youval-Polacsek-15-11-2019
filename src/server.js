@@ -11,10 +11,10 @@ mongoose.connect(process.env.MONGODB_URI||'mongodb://localhost/HeroloWeather');
 const app = express()
 const api = require('./api')
 
-app.use(express.static(path.join(__dirname, 'build')));
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
+app.use(express.static(path.join(__dirname, 'build')));
 
 app.use(function (req, res, next) {
   res.header('Access-Control-Allow-Origin', '*')
