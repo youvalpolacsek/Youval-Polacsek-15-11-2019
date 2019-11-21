@@ -2,7 +2,7 @@
   display: grid;
   text-align: center;
   align-self: auto;
-  background-color: #28AFB0;
+  background-color: #E0FBFC;
   height: 100vh;
   grid-template-columns: 100%;
   grid-template-rows: 5% 10% 5% 70%;
@@ -50,8 +50,6 @@
 	top:1px;
 }
 
-
-
 .header {
   display: grid;
   align-items: center;
@@ -62,6 +60,7 @@
 .navbar{
   border-bottom: solid black;
   border-top: solid black;
+  background-color: #477998;
   display: grid;
   grid-template-columns: 42% 42% 10%;
   align-items: center;

@@ -14,7 +14,7 @@ render(){
     // let currentText = currentCondition.map(c => c.Link)
     // console.log(currentText)
     return(
-        <div>it's {tempCelcius} degrees outside and {currentText}</div>
+        <div>it's {tempCelcius} <span>&#176;</span> outside and {currentText}</div>
     )
 }
 

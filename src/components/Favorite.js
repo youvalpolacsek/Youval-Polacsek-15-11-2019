@@ -21,18 +21,21 @@ showCity = () => {
 }
 
 render(){
-    let name = this.props.name.toUpperCase()
+    let name = this.props.name
     let key = this.props.key
     let temp = this.props.temp
     let unit = this.props.unit
+    let unitSymbole = unit == "Celsius"? "C": "F"
     let tempImperial = this.props.city.tempImperial
     let currentText = this.props.city.currentText
-    
+    let theCityFixed = name.slice(0,1).toUpperCase()
+            let x = name.slice(1, name.length)
+            let theName = theCityFixed+x
 
     return(
         <div className="favorite">
        <div id={this.props.name} className="favoriteName">
-           <div>Hi from {name}, it's {temp}  degrees {unit} and {currentText} </div>
+           <div>Hi from {theName}, it's {temp}  &#176; {unitSymbole} and {currentText} </div>
        </div>
        <div className="favoriteButtons">
            <a onClick={this.removeCity} href="#" className="myButton2">Remove from Favorites</a>

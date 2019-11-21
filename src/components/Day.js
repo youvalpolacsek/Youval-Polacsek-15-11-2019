@@ -16,8 +16,7 @@ const Day = (props) => {
 return(
    <div className="day">
     <div id="date">{formatDate}</div>
-    <div id="temp">{minTemperature} -{maxTemperature} degrees</div>
-    <div id="unit">{unit}</div>
+    <div id="temp">{minTemperature} -{maxTemperature} <span>&#176;</span></div>
     <div id="weatherText">{WeatherText}</div>
    </div>
 )

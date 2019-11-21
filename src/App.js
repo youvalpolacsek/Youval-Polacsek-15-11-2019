@@ -47,7 +47,7 @@ class App extends Component{
         <div className="appContainer" style={this.state.darkMode ? style : null} >
             <div className="navbar">
               <span onClick={this.ShowCity}>Search </span>
-              <span onClick={this.ShowFav} >Favorites</span>
+              <span onClick={this.ShowFav} >My Cities</span>
               {viewMode}
             </div>
          <h1 className="header">Herolo Weather App</h1>
