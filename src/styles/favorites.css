@@ -1,0 +1,8 @@
+.favoritesContainer{
+    display: grid;
+    justify-content: center;
+    margin-top: 10px;
+    grid-template-columns: 90%;
+    grid-auto-rows: minmax(auto, 80px);  
+    row-gap: 10px;  
+}

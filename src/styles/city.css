@@ -1,0 +1,38 @@
+.citySearchContainer{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 60% 10% 10%;
+    /* grid-template-rows: 100%; */
+    grid-auto-rows: minmax(auto, 30px);    
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.weatherIcon{
+    height:50px;
+    display: inline-block;
+    width: 50px;
+    align-self: center;
+}
+
+.forceastContainer{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(5, 16.66%) ;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+#cityName{
+    justify-self: end;
+    align-self: center;
+
+}
+#city{
+    font-size: 2em;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 10px;
+    /* grid-template-rows: 50%; */
+    /* margin-bottom: 10px; */
+}

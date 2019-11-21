@@ -1,0 +1,31 @@
+.day{
+    display: grid;
+    border: solid black;
+    align-items: center;
+    background-color: #8D99AE;
+    border-radius: 10px;
+    margin-top: 10px;
+    row-gap: 10px;
+    height: 200px;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "d"
+    "t"
+    "u wt";
+}
+
+#date{
+    grid-area: "d";
+}
+#temp{
+    grid-area: "t";
+}
+
+#unit{
+    grid-area: "u";
+}
+#weatherText{
+    grid-area: "wt";
+}
+
+

@@ -1,22 +1,68 @@
-.App {
+.appContainer {
+  display: grid;
   text-align: center;
+  align-self: auto;
+  background-color: #28AFB0;
+  height: 100vh;
+  grid-template-columns: 100%;
+  grid-template-rows: 5% 10% 5% 70%;
+}
+.css-input {
+  padding: 7px;
+  font-size: 21px;
+  border-width: 2px;
+  border-color: #45b9c3;
+  background-color: #ffffff;
+  color: #000000;
+  border-style: ridge;
+  border-radius: 16px;
+  box-shadow: 3px 4px 11px rgba(66,66,66,.90);
+  /* text-shadow: 0px 0px 5px rgba(66,66,66,.75); */
+}
+.css-input:focus {
+  outline:none;
 }
 
-.App-logo {
-  height: 40vmin;
+.myButton {
+	box-shadow: 6px 10px 14px 0px #276873;
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	background-color:#7892c2;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+  padding:13px 32px;
+  justify-self: center;
+  /* align-self: stretch; */
+  padding-bottom: 40px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+
+
+.header {
+  display: grid;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: calc(10px + 3vmin);
 }
 
-.App-link {
-  color: #09d3ac;
+.navbar{
+  border-bottom: solid black;
+  border-top: solid black;
+  display: grid;
+  grid-template-columns: 42% 42% 10%;
+  align-items: center;
 }
