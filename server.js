@@ -29,7 +29,7 @@ app.get('*', function (req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
-const port = 5000
-let socket = app.listen(process.env.port ||port, () => console.log( `Running server on port ${ port }` ) )
+const PORT = 5000
+let socket = app.listen(process.env.PORT ||PORT, () => console.log( `Running server on port ${ PORT }` ) )
 
 module.exports = { app, socket }
