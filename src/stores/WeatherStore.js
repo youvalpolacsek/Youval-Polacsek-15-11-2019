@@ -36,7 +36,7 @@ class WeatherStore {
 
 
     @action findCityCurrentCond = async (key) => {
-            let currentCondition = await axios.get(`http://localhost:5000/cityCurrent/${key}`)
+            let currentCondition = await axios.get(`/cityCurrent/${key}`)
             this.currentText = currentCondition.data[0].WeatherText
             this.tempCelcius = currentCondition.data[0].tempCelcius
             this.tempImperial = currentCondition.data[0].tempImperial 

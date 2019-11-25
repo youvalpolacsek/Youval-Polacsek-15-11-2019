@@ -27,7 +27,7 @@ class City extends Component{
         autoComplete = async () => {
             let cityName = this.state.theCity
             if (cityName.length >=2){
-                let cityNames = await axios.get(`http://localhost:5000/city/${cityName}`)
+                let cityNames = await axios.get(`/city/${cityName}`)
                 this.setState({cityNamesList: cityNames.data })
                 // console.log(cityNames[0].key)
         }
@@ -35,7 +35,7 @@ class City extends Component{
 
         findForecast = async () => {
             let cityKey = this.state.cityNamesList[0].key
-            let theForecast = await axios.get(`http://localhost:5000/cityForecast/${cityKey}`)
+            let theForecast = await axios.get(`/cityForecast/${cityKey}`)
             // console.log(theForecast)
             this.setState({cityForecast:theForecast})
             // console.log(this.state.cityForecast.data)
@@ -44,7 +44,7 @@ class City extends Component{
 
         findCurrentCondition = async () => {
             let cityKey = this.state.cityNamesList[0].key
-            let currentCondition = await axios.get(`http://localhost:5000/cityCurrent/${cityKey}`)
+            let currentCondition = await axios.get(`/cityCurrent/${cityKey}`)
             console.log(cityKey) 
             this.setState({cityCurrentCondition:currentCondition}) 
             this.findForecast()
@@ -58,7 +58,7 @@ class City extends Component{
         componentDidMount = async () => {
             let cityKey = "215854"
             this.setState({theCity : "Tel Aviv"})
-            let theForecast = await axios.get(`http://localhost:5000/cityForecast/${cityKey}`)
+            let theForecast = await axios.get(`/cityForecast/${cityKey}`)
             this.setState({cityForecast:theForecast})
             this.props.WeatherStore.findCityCurrentCond(cityKey)
             this.setState({cityName : this.state.theCity})

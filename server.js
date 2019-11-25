@@ -4,7 +4,7 @@ const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 
 
-mongoose.connect('mongodb://127.0.0.1/HeroloWeather', {useUnifiedTopology: true, useNewUrlParser: true })
+mongoose.connect('mongodb://localhost/HeroloWeather', {useUnifiedTopology: true, useNewUrlParser: true })
 
 // mongoose.connect(process.env.MONGODB_URI||'mongodb://localhost/HeroloWeather');
 
