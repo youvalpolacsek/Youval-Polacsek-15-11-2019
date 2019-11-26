@@ -23,7 +23,7 @@
 
 .favoriteButton{
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 10% 10%;
 	justify-self: center;
 }
 
