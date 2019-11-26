@@ -1,11 +1,10 @@
 .citySearchContainer{
     margin-top: 10px;
     display: grid;
-    grid-template-columns: 60% 10% 10%;
+    grid-template-columns:5fr 1fr 1fr;
     /* grid-template-rows: 100%; */
     grid-auto-rows: minmax(auto, 30px);    
-    justify-content: center;
-    column-gap: 10px;
+    /* column-gap: 10px; */
 }
 
 .weatherIcon{
