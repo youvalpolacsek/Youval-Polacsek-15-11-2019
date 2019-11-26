@@ -1,6 +1,6 @@
 .favorite{
 	display: grid;
-	grid-template-columns: 5fr 1fr%;
+	grid-template-columns: 5fr 1fr;
 	border: solid black;
 	background-color: #8D99AE;
 	border-radius: 24px;
@@ -23,7 +23,7 @@
 
 .favoriteButton{
 	display: grid;
-	grid-template-columns: 10% 10%;
+	grid-template-columns: 1fr 1fr;
 	justify-self: center;
 }
 
@@ -37,7 +37,7 @@
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Arial;
-	font-size:15px;
+	font-size:1.5vw;
 	font-weight:bold;
 	margin-top: 15px;
 	margin-right: 10px;
